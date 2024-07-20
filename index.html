@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny Resort Hotel</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+        .hero {
+            background: url('/Sunny-Resort-Hotel/images/image.png') center center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .features, .rooms, .booking, .footer {
+            padding: 50px 0;
+        }
+        .feature-icon, .room-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        .room-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .room-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .room-card-body {
+            padding: 20px;
+        }
+        .booking-form .form-control {
+            margin-bottom: 15px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sunny Resort Hotel</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#booking">Book Now</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1>Welcome to Sunny Resort Hotel</h1>
+            <p>Your luxurious escape in paradise</p>
+            <a href="#booking" class="btn btn-primary btn-lg">Book Your Stay</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features text-center">
+        <div class="container">
+            <h2 class="mb-5">Hotel Features</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="feature-icon fas fa-swimmer"></i>
+                    <h4>Swimming Pool</h4>
+                    <p>Relax by our infinity pool with stunning views.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="feature-icon fas fa-spa"></i>
+                    <h4>Spa Services</h4>
+                    <p>Indulge in our luxurious spa treatments.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="feature-icon fas fa-concierge-bell"></i>
+                    <h4>24/7 Concierge</h4>
+                    <p>Our dedicated team is here to assist you around the clock.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms text-center">
+        <div class="container">
+            <h2 class="mb-5">Our Rooms</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="images/image.png" alt="Standard Room">
+                        <div class="room-card-body">
+                            <h4>Deluxe Room</h4>
+                            <p>Spacious and elegant, with a stunning view of the ocean.</p>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="images/image.png" alt="Standard Room">
+                        <div class="room-card-body">
+                            <h4>Suite</h4>
+                            <p>Luxurious suite with a private balcony and premium amenities.</p>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="images/image.png" alt="Standard Room">
+                        <div class="room-card-body">
+                            <h4>Standard Room</h4>
+                            <p>Comfortable and cozy, perfect for a relaxing stay.</p>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="mb-5 text-center">Online Booking</h2>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <form class="booking-form">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="checkin">Check-In Date</label>
+                                <input type="date" class="form-control" id="checkin" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="checkout">Check-Out Date</label>
+                                <input type="date" class="form-control" id="checkout" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="room">Room Type</label>
+                            <select id="room" class="form-control" required>
+                                <option value="">Choose...</option>
+                                <option value="deluxe">Deluxe Room</option>
+                                <option value="suite">Suite</option>
+                                <option value="standard">Standard Room</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sunny Resort Hotel. All Rights Reserved.</p>
+            <p>123 Paradise Street, Tourist Town, T1234AB</p>
+            <p>Email: info@sunnyresorthotel.com | Phone: +123 456 7890</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
